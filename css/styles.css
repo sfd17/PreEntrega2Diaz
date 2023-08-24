@@ -4,63 +4,74 @@
   box-sizing: border-box;
 }
 
-.header {
+header {
   background-image: url("../images/no-shave-gb47bda3ec_1280.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  justify-content: center;
   background-position: center;
-  height: 300px; /* Ajusta la altura del header según tus necesidades */
+  height: 280px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff; /* Cambia el color del texto según el contraste con la imagen */
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
+  flex-direction: column;
 }
 
 .elbarbaro {
-  font-size: 150px;
-  position: inline;
-  top: 20%;
-  left: 50%;
-  right: 50%;
+  font-size: 90px;
+  position: relative;
   text-align: center;
   justify-content: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-position: center;
   color: rgb(73, 73, 72);
   display: flex;
-}
-
-.portada {
-  width: auto;
-
-  background-image: url("images/no-shave-gb47bda3ec_1280.png");
-  background-repeat: repeat-x;
+  padding: 100px;
 }
 
 body {
-  background-color: #b16f1e;
+  background-color: #ede8d3;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  margin-right: 20px;
+  display: inline;
+  font-size: 20px;
+  position: relative;
+  list-style: none;
+}
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3;
+}
+/* 
 .ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  background-color: #413f3f;
+  z-index: 100;
+  background-color: #25221d;
   width: 100%;
   justify-content: center;
+  display: flex;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+}
 nav li {
-  margin-right: 50px;
-  display: inline-block;
+  display: inline;
   font-size: 20px;
-  position: relative;
-  right: 300px;
-  left: 300px;
+  justify-content: center;
 }
 
 nav li:last-child {
@@ -70,28 +81,31 @@ nav li:last-child {
 nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 60px;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #6d6c6c;
+  background-color: #6a6767;
+  text-decoration: none;
+  list-style: none;
+  color: #1c1c1c;
+} */
+
+main {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 50%);
+  gap: 2rem;
+  margin: 3rem 2rem 3rem 2rem;
+  align-content: center;
 }
 
-.contenedor {
-  display: flex;
+main div img {
+  width: 100%;
   height: 100%;
-}
-.imageindex1 {
-  background-position: left;
-  margin: 20px;
-  display: inline;
-}
-
-.imageindex2 {
-  background-position: right;
-  margin: 20px;
-  display: inline;
+  object-fit: cover;
 }
 
 .mapa img {
@@ -101,10 +115,11 @@ nav a:hover {
 }
 
 .footer {
-  background-color: #333;
-  color: white;
+  margin-top: 4rem;
+  color: whitesmoke;
   padding: 20px;
   text-align: center;
+  background-color: #25221d;
 }
 
 .fotostendencia {
@@ -112,4 +127,22 @@ nav a:hover {
   height: 100%;
   padding: auto;
   margin: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    height: 150px;
+  }
+  .elbarbaro {
+    font-size: 60px;
+  }
+
+  /* .ul {
+    flex-direction: column;
+    align-items: end;
+  } */
+  .elbarbaro {
+    padding: 50px;
+    display: ;
+  }
 }
