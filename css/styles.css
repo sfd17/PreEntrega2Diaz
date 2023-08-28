@@ -108,6 +108,16 @@ main div img {
   object-fit: cover;
 }
 
+.texto-servicios {
+  position: relative;
+  margin-top: 7rem;
+}
+
+.texto-historia {
+  position: relative;
+  margin-top: 7rem;
+}
+
 .mapa img {
   width: 500px;
   height: 500px;
